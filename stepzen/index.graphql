@@ -1,0 +1,9 @@
+schema
+  @sdl(
+    files: [
+      "races/index.graphql"
+      "raceRankings/index.graphql"
+    ]
+  ) {
+  query: Query
+}
