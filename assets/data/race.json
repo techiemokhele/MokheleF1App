@@ -8,15 +8,7 @@
         "type": null
       },
       "response": [
-        {
-          "date": "2023-03-05T15:00:00Z",
-          "distance": "307.6 Kms",
-          "id": 1671,
-          "season": 2023,
-          "status": "Completed",
-          "timezone": "utc",
-          "type": "Race",
-          "weather": null,
+          {
           "circuit": {
             "id": 2,
             "image": "https://media-4.api-sports.io/formula-1/circuits/2.png",
@@ -29,7 +21,25 @@
               "country": "Bahrain"
             },
             "name": "Bahrain Grand Prix"
-          }
+          },
+          "date": "2023-03-05T15:00:00Z",
+          "distance": "307.6 KM",
+          "fastest_lap": {
+            "driver": {
+              "id": 83
+            },
+            "time": "1:33.996"
+          },
+          "id": 1671,
+          "laps": {
+            "current": null,
+            "total": 57
+          },
+          "season": 2023,
+          "status": "Completed",
+          "timezone": "utc",
+          "type": "Race",
+          "weather": null
         }
       ],
       "results": 1
