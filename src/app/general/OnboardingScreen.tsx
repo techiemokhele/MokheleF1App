@@ -57,7 +57,7 @@ export default function OnboardingScreen() {
 
                 {/*not now text section*/}
                 <View style={styles.welcomeLogTextContainer} >
-                    <Link href={"/HomeScreen"}>
+                    <Link href={"/appScreens"}>
                         <Text style={styles.welcomeActionTextItem}>Not now</Text>
                     </Link>
                 </View>
