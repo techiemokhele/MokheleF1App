@@ -122,8 +122,8 @@ const styles = StyleSheet.create({
     },
     dashedLine: {
         height: '100%',
-        borderRightWidth: 1, // Adjust the width of the line as needed
-        borderColor: COLORS.dimGrey, // Change the color of the line as needed
+        borderRightWidth: 1,
+        borderColor: COLORS.dimGrey,
     },
 
     //race info section

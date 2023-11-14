@@ -45,10 +45,11 @@ export default function RaceLayout() {
                     tabBarLabelStyle: {
                         fontSize: 12,
                         color: COLORS.white,
-                        fontFamily: "F1BoldMobile",
+                        fontFamily: "F1Regular",
+                        textTransform: "capitalize"
                     },
-                    tabBarInactiveTintColor: COLORS.dimGrey,
-                    tabBarActiveTintColor: COLORS.blue,
+                    tabBarInactiveTintColor: COLORS.grey,
+                    tabBarActiveTintColor: COLORS.white,
                     tabBarIndicatorStyle: {
                         backgroundColor: COLORS.white,
                         height: 5,
@@ -56,8 +57,9 @@ export default function RaceLayout() {
                 }}
             >
                 <TopTabs.Screen name='index' options={{ title: "Schedule" }} />
-                <TopTabs.Screen name='qualifiers' options={{ title: "Media" }} />
+                <TopTabs.Screen name='media' options={{ title: "Media" }} />
                 <TopTabs.Screen name='circuit' options={{ title: "Circuit" }} />
+                <TopTabs.Screen name='rankings' options={{ title: "Ranking" }} />
             </TopTabs>
         </>
     );
