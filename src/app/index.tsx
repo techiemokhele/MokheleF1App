@@ -23,7 +23,7 @@ export default function App() {
     }
 
     setTimeout(() => {
-      navigation.navigate("appScreens");
+      navigation.navigate("WelcomeScreen");
     }, 5000);
   }, [fontsLoaded, fontError, navigation]);
 
