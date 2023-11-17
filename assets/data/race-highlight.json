@@ -1,0 +1,35 @@
+{
+  "data": {
+    "races": {
+      "errors": [],
+      "get": "races",
+      "parameters": {
+        "season": null,
+        "type": null
+      },
+      "response": [
+        {
+          "date": "2023-03-05T15:00:00Z",
+          "title": "Race"
+        },
+        {
+          "date": "2023-03-04T15:00:00Z",
+          "title": "Sprint"
+        },
+        {
+          "date": "2023-03-04T15:00:00Z",
+          "title": "Sprint Shootout"
+        },
+        {
+          "date": "2023-03-04T15:00:00Z",
+          "title": "Qualifying"
+        },
+        {
+          "date": "2023-03-04T15:00:00Z",
+          "title": "Practice 1"
+        }
+      ],
+      "results": 1
+    }
+  }
+}

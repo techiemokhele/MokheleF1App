@@ -7,7 +7,7 @@ import { Entypo, Feather } from "@expo/vector-icons";
 import raceResponse from "../../../../assets/data/races.json";
 import { COLORS } from "../../../constants/theme";
 
-const race = raceResponse.data.races.response[20];
+const race = raceResponse.data.races.response[22];
 
 export default function Circuit() {
     const { id } = useLocalSearchParams();

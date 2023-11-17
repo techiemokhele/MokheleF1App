@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from "react";
-import { ImageBackground, StyleSheet,StatusBar, Text, View, SafeAreaView, Image } from 'react-native';
+import { ImageBackground, StyleSheet, StatusBar, Text, View, SafeAreaView, Image } from 'react-native';
 import { useNavigation } from "expo-router";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
@@ -19,22 +19,22 @@ export default function App() {
 
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded || fontError) {
-      await SplashScreen.hideAsync(); 
+      await SplashScreen.hideAsync();
     }
 
     setTimeout(() => {
-      navigation.navigate("WelcomeScreen");
-    }, 5000); 
+      navigation.navigate("appScreens");
+    }, 5000);
   }, [fontsLoaded, fontError, navigation]);
 
   useEffect(() => {
     onLayoutRootView();
   }, [onLayoutRootView]);
 
-    useEffect(() => {
+  useEffect(() => {
     navigation.setOptions({ headerShown: false });
   }, [navigation]);
-  
+
   if (!fontsLoaded) {
     return null;
   }
@@ -53,13 +53,13 @@ export default function App() {
           <Image source={{ uri: "https://static.cdnlogo.com/logos/f/60/formula-1-8211-f1.png" }} style={styles.splashScreenImageLogoItem} />
         </View>
 
-      <LinearGradient
-        colors={["transparent","rgba(254, 0, 0, 0.19)"]}
-        style={styles.splashScreenLinearGradient}
-        start={{ x: 0.5, y: 0 }}
-        end={{ x: 0.5, y: 1 }}
+        <LinearGradient
+          colors={["transparent", "rgba(254, 0, 0, 0.19)"]}
+          style={styles.splashScreenLinearGradient}
+          start={{ x: 0.5, y: 0 }}
+          end={{ x: 0.5, y: 1 }}
         />
-     </ImageBackground>
+      </ImageBackground>
     </View>
   );
 }
